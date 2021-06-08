@@ -1,0 +1,14 @@
+/*   
+Theme Name: Basicamente Copy Theme
+Theme URI: https://github.com/kchaflam/BasicamenteThemeCopy
+Description: Our copy of Basicamente's theme.
+Author: Kevin Andrés Chafla Moran
+Author URI: https://github.com/kchaflam
+Version: 1.0
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
