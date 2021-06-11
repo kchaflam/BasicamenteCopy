@@ -9,22 +9,26 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="navbar-brand col-md-3" id="logo">
-            <a class="navbar-brand" href="<?php get_home_url(); ?>">
-                <img width="160" src="<?php echo get_template_directory_uri(); ?>" alt="Basicamente">
-            </a>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navigation" aria-controls="Navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-        </ul>
+            <div class="col-md-3" id="logo">
+                <a class="navbar-brand" <?php echo "href='" . get_home_url() . "'" ?>>
+                    <img width="160" <?php echo "src='" . get_template_directory_uri() . "/assets/img/basicamente_logo.svg'" ?> alt="Basicamente">
+                </a>
+            </div>
 
-        <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-primary rounded-0">Começar Agora</button>
+            <div class="col-md-6 collapse navbar-collapse" id="Navigation">
+                <ul class="nav col-12 mb-2 justify-content-center mb-md-0">
+                    <?php wp_list_pages("title_li="); ?>
+                </ul>
+            </div>
+
+            <div class="col-md-3 text-end d-none d-md-block">
+                <button type="button" class="btn btn-primary rounded-0">Começar Agora</button>
+            </div>
         </div>
     </nav>

@@ -4,8 +4,21 @@ function LoadTitle()
 {
     add_theme_support("title-tag");
 }
-
 add_action("after_setup_theme", "LoadTitle");
+
+function ChangeLiCss($output, $r, $pages)
+{
+    $output = str_replace("page-item", "nav-item px-2", $output);
+    return $output;
+}
+add_filter("wp_list_pages", "ChangeLiCss", 10, 3);
+
+function ChangeLinkCss($output, $r, $pages)
+{
+    $output = str_replace("<a", "<a class='nav-link'", $output);
+    return $output;
+}
+add_filter("wp_list_pages", "ChangeLinkCss", 10, 3);
 
 function LoadStyles()
 {
@@ -13,7 +26,6 @@ function LoadStyles()
     wp_enqueue_style("main-style", get_template_directory_uri() . "/style.css", array(), wp_get_theme()->get("Version"), "all");
     wp_enqueue_style("font-awesome", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css", array(), "5.15.3", "all");
 }
-
 add_action("wp_enqueue_scripts", "LoadStyles");
 
 function LoadScripts()
@@ -23,5 +35,4 @@ function LoadScripts()
     wp_enqueue_script("bootstrap-script", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js", array(), "5.0.1");
     wp_enqueue_script("main-script", get_template_directory_uri() . "/assets/js/main.js", array(), "1.0");
 }
-
 add_action("wp_enqueue_scripts", "LoadScripts");

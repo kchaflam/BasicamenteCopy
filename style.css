@@ -12,3 +12,7 @@ Version: 1.0
 body {
   font-family: "Quicksand", sans-serif;
 }
+
+.nav-link {
+  color: #000;
+}
