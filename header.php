@@ -22,9 +22,13 @@
             </div>
 
             <div class="col-md-6 collapse navbar-collapse" id="Navigation">
-                <ul class="nav col-12 mb-2 justify-content-center mb-md-0">
-                    <?php wp_list_pages("title_li="); ?>
-                </ul>
+                <?php wp_nav_menu(array(
+                    'theme_location' => 'Header',
+                    'container' => FALSE,
+                    'menu_class' => 'nav col-12 mb-2 justify-content-center mb-md-0',
+                    'add_li_class'  => 'nav-item px-2',
+                    'walker' => new My_Walker_Nav_Menu()
+                ));  ?>
             </div>
 
             <div class="col-md-3 text-end d-none d-md-block">

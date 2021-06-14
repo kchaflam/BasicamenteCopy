@@ -16,3 +16,114 @@ body {
 .nav-link {
   color: #000;
 }
+
+#Navigation ul ul {
+  display: none;
+  position: absolute;
+  top: 2.5em;
+  left: 0;
+  z-index: 99999;
+  width: auto;
+  background: #fff;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  padding: 0;
+}
+
+#Navigation li a {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+#Navigation ul li:hover > ul {
+  display: block;
+}
+
+#Navigation li {
+  position: relative;
+}
+
+footer {
+  background-color: #f1f1f1;
+}
+
+footer h1 {
+  color: #2157a4;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.whats-app-logo {
+  width: 80px;
+}
+
+.messenger-logo {
+  width: 80px;
+}
+
+.info {
+  font-size: 0.8125rem;
+}
+
+.info a {
+  text-decoration: none;
+  color: #000;
+}
+
+.info a:hover {
+  color: #2157a4 !important;
+}
+
+.info b {
+  color: #637280;
+}
+
+.copy {
+  font-size: 10px;
+}
+
+.social-links a {
+  text-align: center;
+  width: 27px;
+  height: 27px;
+  padding: 0;
+  line-height: 27px;
+  border: 1px solid #637280;
+  color: #637280;
+  border-radius: 90%;
+  text-decoration: none;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.social-links a:hover.fa-facebook-f {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  color: #fff;
+}
+
+.social-links a:hover.fa-instagram {
+  background-color: #c54a4f;
+  border: 1px solid #c54a4f;
+  color: #fff;
+}
+
+.social-links a:hover.fa-linkedin {
+  background-color: #0077b5;
+  border: 1px solid #0077b5;
+  color: #fff;
+}
+
+.body h3 {
+  color: #2157a4;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.body p {
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
