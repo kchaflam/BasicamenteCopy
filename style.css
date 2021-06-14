@@ -127,3 +127,33 @@ footer h1 {
   font-size: 14px;
   margin-bottom: 10px;
 }
+
+.pagetitle {
+  background-color: #2157a4;
+}
+
+.texttitle {
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 58px;
+  font-weight: 700;
+}
+
+.slide .carousel-caption {
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  display: inline-block !important;
+  bottom: initial;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.carousel-item img {
+  filter: brightness(40%);
+}
+
+.firstimg {
+  filter: brightness(100%) !important;
+}

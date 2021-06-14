@@ -13,14 +13,14 @@
             <div class="row">
                 <div class="col-5">
                     <b>Ligue-nos</b>
-                    <p class="pt-3 m-0">+351 914 271 971</p>
+                    <p class="pt-3 m-0"><a href="tel:+351 914 271 971" class="text-decoration-none">+351 914 271 971</a></p>
                     <p class="pt-3">
                         <img class="whats-app-logo" <?php echo "src='" . get_template_directory_uri() . "/assets/img/WhatsAppLogo.svg'" ?> alt="Ligue-nos no WhatsApp">
                     </p>
                 </div>
                 <div class="col-5">
                     <b>Envie-nos um e-mail</b>
-                    <p class="pt-3 m-0">info@basicamente.pt</p>
+                    <p class="pt-3 m-0"><a href="mailto:info@basicamente.pt" class="text-decoration-none">info@basicamente.pt</a></p>
                     <p class="pt-3">
                         <img class="messenger-logo" <?php echo "src='" . get_template_directory_uri() . "/assets/img/MESSENGER.svg'" ?> alt="Envie-nos uma mensagem">
                     </p>
