@@ -32,7 +32,7 @@
             </div>
 
             <div class="col-md-3 text-end d-none d-md-block">
-                <button type="button" class="btn btn-primary rounded-0">Começar Agora</button>
+                <a <?php echo "href='" . get_home_url() . "/contactos'" ?>><button type="button" class="btn btn-primary rounded-0">Começar Agora</button></a>
             </div>
         </div>
     </nav>

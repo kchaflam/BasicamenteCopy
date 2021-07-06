@@ -58,3 +58,5 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
         $output .= "\n$indent<ul class=\"mp-level\">\n";
     }
 }
+
+add_theme_support('post-thumbnails');

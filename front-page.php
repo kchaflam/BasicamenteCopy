@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="maincarousel" class="carousel slide carousel-fade h-auto" data-bs-ride="carousel">
+<!-- <div id="maincarousel" class="carousel slide carousel-fade h-auto" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img <?php echo "src='" . get_template_directory_uri() . "/assets/img/carousel-1.png'" ?> class="d-block w-100 firstimg" alt="Digital Journey Happens With Us - Spaceship">
@@ -24,6 +24,8 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<?php the_content(); ?>
 
 <?php get_footer(); ?>

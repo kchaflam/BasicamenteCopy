@@ -5,7 +5,7 @@
                     <h1>Vamos conversar sobre o seu projeto?</h1>
                 </div>
                 <div class="col-6 justify-content-end d-flex align-items-center">
-                    <button type="button" class="btn btn-primary rounded-0">Pedir proposta</button>
+                    <a href="<?php echo "href='" . get_home_url() . "/contactos'" ?>"><button type="button" class="btn btn-primary rounded-0">Pedir proposta</button></a>
                 </div>
             </div>
         </div>
@@ -28,9 +28,9 @@
                 <div class="col-2">
                     <b>Fique Ligado</b>
                     <div class="social-links pt-3">
-                        <a href="https://www.facebook.com/basicamentedigital/" class="fab fa-facebook-f fa-xs" target="_blank"></a>
-                        <a href="https://www.instagram.com/basicamente.digital/" class="fab fa-instagram fa-xs" target="_blank"></a>
-                        <a href="https://pt.linkedin.com/company/basicamente" class="fab fa-linkedin fa-xs" target="_blank"></a>
+                        <a href="https://www.facebook.com/basicamentedigital/" class="fa fa-facebook-f fa-xs" target="_blank"></a>
+                        <a href="https://www.instagram.com/basicamente.digital/" class="fa fa-instagram fa-xs" target="_blank"></a>
+                        <a href="https://pt.linkedin.com/company/basicamente" class="fa fa-linkedin fa-xs" target="_blank"></a>
                     </div>
                 </div>
             </div>
